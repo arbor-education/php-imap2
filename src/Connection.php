@@ -143,7 +143,8 @@ class Connection
 
         if (empty($this->currentMailbox)) {
             $mailboxes = $this->client->listMailboxes('', '*');
-            if (false === $mailboxes) {
+
+            if (empty($mailboxes)) {
                 return false;
             }
 
