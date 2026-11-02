@@ -2,3 +2,4 @@
 composer.lock
 coverage.xml
 .env
+.phpunit.result.cache

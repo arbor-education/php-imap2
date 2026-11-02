@@ -1,0 +1,1019 @@
+{
+    "adrlist:\"Doe, John\" <john.doe@example.com>": [
+        {
+            "mailbox": "john.doe",
+            "host": "example.com",
+            "personal": "Doe, John"
+        }
+    ],
+    "adrlist:\"Quoted \\\"Name\\\"\" <q@x.y>": [
+        {
+            "mailbox": "q",
+            "host": "x.y",
+            "personal": "Quoted \"Name\""
+        }
+    ],
+    "adrlist:=?UTF-8?B?w4lsb2RpZQ==?= <elodie@example.fr>": [
+        {
+            "mailbox": "elodie",
+            "host": "example.fr",
+            "personal": "Élodie"
+        }
+    ],
+    "adrlist:Group: x@y.z, w@v.u;": [
+        {
+            "mailbox": "x",
+            "host": "y.z"
+        },
+        {
+            "mailbox": "w",
+            "host": "v.u"
+        }
+    ],
+    "adrlist:Sender <sender@test.com>, CC@test.com, root": [
+        {
+            "mailbox": "sender",
+            "host": "test.com",
+            "personal": "Sender"
+        },
+        {
+            "mailbox": "CC",
+            "host": "test.com"
+        },
+        {
+            "mailbox": "root",
+            "host": "default.host"
+        }
+    ],
+    "adrlist:a@b.c (Comment), <d@e.f>": [
+        {
+            "mailbox": "a",
+            "host": "b.c"
+        },
+        {
+            "mailbox": "d",
+            "host": "e.f"
+        }
+    ],
+    "adrlist:nohost": [
+        {
+            "mailbox": "nohost",
+            "host": "default.host"
+        }
+    ],
+    "adrlist:Ünïcödé <u@x.y>": [
+        {
+            "mailbox": "u",
+            "host": "x.y",
+            "personal": "Ünïcödé"
+        }
+    ],
+    "headers:attachment_encoded_filename.eml": {
+        "error": "Error"
+    },
+    "headers:attachment_long_filename.eml": {
+        "error": "Error"
+    },
+    "headers:attachment_no_disposition.eml": {
+        "error": "Error"
+    },
+    "headers:bcc.eml": {
+        "date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "Date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "reply-to@here.com",
+        "reply_to": [
+            {
+                "mailbox": "reply-to",
+                "host": "here.com"
+            }
+        ],
+        "senderaddress": "sender@here.com",
+        "sender": [
+            {
+                "mailbox": "sender",
+                "host": "here.com"
+            }
+        ]
+    },
+    "headers:boolean_decoded_content.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:date-template.eml": {
+        "date": "%date_raw_header%",
+        "Date": "%date_raw_header%",
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:email_address.eml": {
+        "error": "Error"
+    },
+    "headers:email_with_image.eml": {
+        "date": "Wed, 14 Sep 2022 23:30:06 +0000",
+        "Date": "Wed, 14 Sep 2022 23:30:06 +0000",
+        "subject": "Encoding issue: E-mail with image",
+        "Subject": "Encoding issue: E-mail with image",
+        "message_id": "<SY4P282MB173913A2B375BF08F7BF730786469@SY4P282MB1739.AUSP282.PROD.OUTLOOK.COM>",
+        "toaddress": "javanile.develop@gmail.com",
+        "to": [
+            {
+                "mailbox": "javanile.develop",
+                "host": "gmail.com",
+                "personal": "javanile.develop@gmail.com"
+            }
+        ],
+        "fromaddress": "chris.walker@canfigure.net",
+        "from": [
+            {
+                "mailbox": "chris.walker",
+                "host": "canfigure.net",
+                "personal": "Chris Walker"
+            }
+        ],
+        "reply_toaddress": "chris.walker@canfigure.net",
+        "reply_to": [
+            {
+                "mailbox": "chris.walker",
+                "host": "canfigure.net",
+                "personal": "Chris Walker"
+            }
+        ],
+        "senderaddress": "chris.walker@canfigure.net",
+        "sender": [
+            {
+                "mailbox": "chris.walker",
+                "host": "canfigure.net",
+                "personal": "Chris Walker"
+            }
+        ]
+    },
+    "headers:embedded_email.eml": {
+        "date": "Fri, 29 Jan 2016 14:25:40 +0100",
+        "Date": "Fri, 29 Jan 2016 14:25:40 +0100",
+        "subject": "embedded message",
+        "Subject": "embedded message",
+        "message_id": "<7e5798da5747415e5b82fdce042ab2a6@cerstor.cz>",
+        "toaddress": "demo@cerstor.cz",
+        "to": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ],
+        "fromaddress": "demo@cerstor.cz",
+        "from": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ],
+        "reply_toaddress": "demo@cerstor.cz",
+        "reply_to": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ],
+        "senderaddress": "demo@cerstor.cz",
+        "sender": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ]
+    },
+    "headers:embedded_email_without_content_disposition.eml": {
+        "date": "Fri, 5 Apr 2019 13:48:50 +0200",
+        "Date": "Fri, 5 Apr 2019 13:48:50 +0200",
+        "subject": "Subject",
+        "Subject": "Subject",
+        "message_id": "<AC39946EBF5C034B87BABD5343E96979012671D9F7E4@VM002.cerk.cc>",
+        "toaddress": "demo@cerstor.cz",
+        "to": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ],
+        "fromaddress": "demo@cerstor.cz",
+        "from": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ],
+        "reply_toaddress": "demo@cerstor.cz",
+        "reply_to": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ],
+        "senderaddress": "demo@cerstor.cz",
+        "sender": [
+            {
+                "mailbox": "demo",
+                "host": "cerstor.cz"
+            }
+        ]
+    },
+    "headers:four_nested_emails.eml": {
+        "date": null,
+        "Date": null,
+        "subject": "3-third-subject",
+        "Subject": "3-third-subject",
+        "message_id": "<>",
+        "toaddress": "test@example.com",
+        "to": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ],
+        "fromaddress": "test@example.com",
+        "from": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ],
+        "reply_toaddress": "test@example.com",
+        "reply_to": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ],
+        "senderaddress": "test@example.com",
+        "sender": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ]
+    },
+    "headers:gbk_charset.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:html_only.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:imap_mime_header_decode_returns_false.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "pî±#]\u001bÝ°è[°ëWÌ\fN\u0017Ì\fËLLÌÌLÌÌNLË\u0019\u0019",
+        "Subject": "pî±#]\u001bÝ°è[°ëWÌ\fN\u0017Ì\fËLLÌÌLÌÌNLË\u0019\u0019",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:inline_attachment.eml": {
+        "error": "Error"
+    },
+    "headers:issue_142.eml": {
+        "date": "Sun, 16 Mar 2014 00:22:06 +0000",
+        "Date": "Sun, 16 Mar 2014 00:22:06 +0000",
+        "subject": "Ihre mytaxi Quittung (49M6J)",
+        "Subject": "Ihre mytaxi Quittung (49M6J)",
+        "message_id": "<00000144c8445931-be533ff5-c8b9-4257-a4cd-3c280b2f3854-000000@email.amazonses.com>",
+        "toaddress": "anonym@anonym.com",
+        "to": [
+            {
+                "mailbox": "anonym",
+                "host": "anonym.com"
+            }
+        ],
+        "fromaddress": "somesender@sending.net",
+        "from": [
+            {
+                "mailbox": "somesender",
+                "host": "sending.net",
+                "personal": "mytaxi Payment"
+            }
+        ],
+        "reply_toaddress": "somesender@sending.net",
+        "reply_to": [
+            {
+                "mailbox": "somesender",
+                "host": "sending.net",
+                "personal": "mytaxi Payment"
+            }
+        ],
+        "senderaddress": "somesender@sending.net",
+        "sender": [
+            {
+                "mailbox": "somesender",
+                "host": "sending.net",
+                "personal": "mytaxi Payment"
+            }
+        ]
+    },
+    "headers:ks_c_5601-1987_headers.eml": {
+        "date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "Date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "subject": "RE: 회원님께 Ersi님이 메시지를 보냈습니다.",
+        "Subject": "RE: 회원님께 Ersi님이 메시지를 보냈습니다.",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com",
+                "personal": "김 현진"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com",
+                "personal": "김 현진"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com",
+                "personal": "김 현진"
+            }
+        ]
+    },
+    "headers:mail_that_is_attachment.eml": {
+        "date": "Sun, 15 Feb 2015 10:21:51 +0000",
+        "Date": "Sun, 15 Feb 2015 10:21:51 +0000",
+        "subject": "Report domain: yyy.cz Submitter: google.com Report-ID: 2244696771454641389",
+        "Subject": "Report domain: yyy.cz Submitter: google.com Report-ID: 2244696771454641389",
+        "message_id": "<2244696771454641389@google.com>",
+        "toaddress": "xxx@yyy.cz",
+        "to": [
+            {
+                "mailbox": "xxx",
+                "host": "yyy.cz"
+            }
+        ],
+        "fromaddress": "xxx@yyy.cz",
+        "from": [
+            {
+                "mailbox": "xxx",
+                "host": "yyy.cz",
+                "personal": "noreply-dmarc-support via xxx"
+            }
+        ],
+        "reply_toaddress": "noreply-dmarc-support@google.com",
+        "reply_to": [
+            {
+                "mailbox": "noreply-dmarc-support",
+                "host": "google.com"
+            }
+        ],
+        "senderaddress": "xxx@yyy.cz",
+        "sender": [
+            {
+                "mailbox": "xxx",
+                "host": "yyy.cz"
+            }
+        ]
+    },
+    "headers:message.eml": {
+        "date": null,
+        "Date": null,
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "you@example.com",
+        "to": [
+            {
+                "mailbox": "you",
+                "host": "example.com"
+            }
+        ],
+        "fromaddress": "me@example.com",
+        "from": [
+            {
+                "mailbox": "me",
+                "host": "example.com"
+            }
+        ],
+        "reply_toaddress": "me@example.com",
+        "reply_to": [
+            {
+                "mailbox": "me",
+                "host": "example.com"
+            }
+        ],
+        "senderaddress": "me@example.com",
+        "sender": [
+            {
+                "mailbox": "me",
+                "host": "example.com"
+            }
+        ]
+    },
+    "headers:missing_date.eml": {
+        "date": null,
+        "Date": null,
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@here.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "here.com"
+            }
+        ],
+        "reply_toaddress": "from@here.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "here.com"
+            }
+        ],
+        "senderaddress": "from@here.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "here.com"
+            }
+        ]
+    },
+    "headers:missing_from.eml": {
+        "error": "Error"
+    },
+    "headers:mixed_filename.eml": {
+        "date": "Fri, 02 Feb 2018 22:23:06 +0300",
+        "Date": "Fri, 02 Feb 2018 22:23:06 +0300",
+        "subject": "Свежий прайс-лист",
+        "Subject": "Свежий прайс-лист",
+        "message_id": "<>",
+        "toaddress": "foo@bar.com",
+        "to": [
+            {
+                "mailbox": "foo",
+                "host": "bar.com"
+            }
+        ],
+        "fromaddress": "support@part-kom.ru",
+        "from": [
+            {
+                "mailbox": "support",
+                "host": "part-kom.ru",
+                "personal": "Прайсы || ПартКом"
+            }
+        ],
+        "reply_toaddress": "support@part-kom.ru",
+        "reply_to": [
+            {
+                "mailbox": "support",
+                "host": "part-kom.ru",
+                "personal": "Прайсы || ПартКом"
+            }
+        ],
+        "senderaddress": "support@part-kom.ru",
+        "sender": [
+            {
+                "mailbox": "support",
+                "host": "part-kom.ru",
+                "personal": "Прайсы || ПартКом"
+            }
+        ]
+    },
+    "headers:multiple_nested_attachments.eml": {
+        "error": "Error"
+    },
+    "headers:nestes_embedded_with_attachment.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:null_content_charset.eml": {
+        "date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "Date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:pec.eml": {
+        "date": "Mon, 2 Oct 2017 12:13:43 +0200",
+        "Date": "Mon, 2 Oct 2017 12:13:43 +0200",
+        "subject": "Certified",
+        "Subject": "Certified",
+        "message_id": "<>",
+        "toaddress": "test@example.com",
+        "to": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ],
+        "fromaddress": "test@example.com",
+        "from": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ],
+        "reply_toaddress": "test@example.com",
+        "reply_to": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ],
+        "senderaddress": "test@example.com",
+        "sender": [
+            {
+                "mailbox": "test",
+                "host": "example.com"
+            }
+        ]
+    },
+    "headers:plain_only.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:plain_text_attachment.eml": {
+        "date": "Tue, 21 Aug 2018 09:05:14 +0200",
+        "Date": "Tue, 21 Aug 2018 09:05:14 +0200",
+        "subject": "Plain text attachment",
+        "Subject": "Plain text attachment",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:references.eml": {
+        "error": "Error"
+    },
+    "headers:simple_multipart.eml": {
+        "date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "Date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:structured_with_attachment.eml": {
+        "date": "Fri, 29 Sep 2017 10:55:23 +0200",
+        "Date": "Fri, 29 Sep 2017 10:55:23 +0200",
+        "subject": "Test",
+        "Subject": "Test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:unknown_encoding.eml": {
+        "date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "Date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:without_charset_plain_only.eml": {
+        "date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "Date": "Wed, 13 Sep 2017 13:05:45 +0200",
+        "subject": "Nuu",
+        "Subject": "Nuu",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    },
+    "headers:without_charset_simple_multipart.eml": {
+        "date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "Date": "Wed, 27 Sep 2017 12:48:51 +0200",
+        "subject": "test",
+        "Subject": "test",
+        "message_id": "<>",
+        "toaddress": "to@here.com",
+        "to": [
+            {
+                "mailbox": "to",
+                "host": "here.com"
+            }
+        ],
+        "fromaddress": "from@there.com",
+        "from": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "reply_toaddress": "from@there.com",
+        "reply_to": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ],
+        "senderaddress": "from@there.com",
+        "sender": [
+            {
+                "mailbox": "from",
+                "host": "there.com"
+            }
+        ]
+    }
+}
