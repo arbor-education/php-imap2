@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Javanile\Imap2\Tests;
 
 use Javanile\Imap2\Polyfill;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -48,7 +49,7 @@ class PolyfillSnapshotTest extends TestCase
         }
     }
 
-    public function headerFixtureProvider(): array
+    public static function headerFixtureProvider(): array
     {
         $cases = [];
         foreach (glob(__DIR__ . '/fixtures/*.eml') as $path) {
@@ -61,6 +62,7 @@ class PolyfillSnapshotTest extends TestCase
     /**
      * @dataProvider headerFixtureProvider
      */
+    #[DataProvider('headerFixtureProvider')]
     public function testRfc822ParseHeadersMatchesSnapshot(string $fixture): void
     {
         $message = file_get_contents(__DIR__ . '/fixtures/' . $fixture);
@@ -71,7 +73,7 @@ class PolyfillSnapshotTest extends TestCase
         );
     }
 
-    public function addressListProvider(): array
+    public static function addressListProvider(): array
     {
         return array_combine(self::ADDRESS_LISTS, array_map(fn ($list) => [$list], self::ADDRESS_LISTS));
     }
@@ -79,6 +81,7 @@ class PolyfillSnapshotTest extends TestCase
     /**
      * @dataProvider addressListProvider
      */
+    #[DataProvider('addressListProvider')]
     public function testRfc822ParseAdrListMatchesSnapshot(string $addressList): void
     {
         $this->assertMatchesSnapshot(

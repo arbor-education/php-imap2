@@ -23,12 +23,19 @@ jobs:
           #- 'macos-latest'
         php-versions:
           - '8.2'
+          - '8.3'
+          - '8.4'
+          - '8.5'
         phpunit-versions:
           - '9.6'
-        #include:
-        #  - operating-system: 'ubuntu-latest'
-        #    php-versions: '7.2'
-        #    phpunit-versions: '8.5.21'
+        # PHPUnit 13 requires PHP >= 8.4.1
+        include:
+          - operating-system: 'ubuntu-latest'
+            php-versions: '8.4'
+            phpunit-versions: '13'
+          - operating-system: 'ubuntu-latest'
+            php-versions: '8.5'
+            phpunit-versions: '13'
     steps:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
