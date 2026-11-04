@@ -99,7 +99,7 @@ class ImapTestCase extends TestCase
         'utf8',
     ];
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->mailbox = getenv('IMAP_MAILBOX');
         $this->username = getenv('IMAP_USERNAME');
