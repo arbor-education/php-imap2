@@ -1986,6 +1986,13 @@ class ImapClient
             $items = array('ALL');
         }
 
+        // criteria is sent as-is, so it must not contain line breaks (which would start a new command)
+        if (preg_match('/[\r\n\0]/', $criteria)) {
+            $this->setError(self::ERROR_COMMAND, 'Invalid search criteria');
+
+            return new ResultIndex($mailbox);
+        }
+
         $esearch  = empty($items) ? false : $this->getCapability('ESEARCH');
         $criteria = trim($criteria);
         $params   = '';
